@@ -1,5 +1,5 @@
 {
-  "name": "group-element",
+  "name": "cover-element",
   "version": "v0.1.0",
   "description": "A toggleable element that groups other elements within Home Assistant's picture-elements cards.",
   "keywords": [
@@ -12,13 +12,12 @@
     "custom-cards",
     "picture-elements"
   ],
-  "main": "src/group-element.js",
-  "module": "src/group-element.js",
-  "repository": "git@github.com:yosilevy/group-element.git",
+  "main": "src/cover-element.js",
+  "module": "src/cover-element.js",
+  "repository": "git@github.com:yosilevy/cover-element.git",
   "author": "Yosi Levy <yosilevy@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "deep-clone-simple": "^1.1.1",
     "lit-element": "^2.0.1"
   },
   "devDependencies": {
@@ -44,7 +43,7 @@
   "scripts": {
     "build": "npm run lint && npm run rollup && npm run babel",
     "rollup": "rollup -c",
-    "babel": "babel dist/group-element-bundle.js --out-file dist/group-element-bundle.js",
+    "babel": "babel dist/cover-element-bundle.js --out-file dist/cover-element-bundle.js",
     "lint": "./node_modules/.bin/eslint src/* --ext .js",
     "watch": "rollup -c --watch"
   }

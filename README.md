@@ -11,13 +11,13 @@ Perfect for creating dynamic interfaces while reusing UI real-estate.
 
 ### Simple install
 
-1. Download and copy `group-element-bundle.js` from the [latest release](https://github.com/yosilevy/group-element/releases/latest) into your `config/www` directory.
+1. Download and copy `cover-element-bundle.js` from the [latest release](https://github.com/yosilevy/group-element/releases/latest) into your `config/www` directory.
 
-2. Add a reference to `group-element-bundle.js` in lovelace.
+2. Add a reference to `cover-element-bundle.js` in lovelace.
 
   ```yaml
   resources:
-    - url: /local/group-element-bundle.js?v=0.1.0
+    - url: /local/cover-element-bundle.js?v=0.1.0
       type: module
   ```
 To do this, go to Configure UI -> Raw Config Editor and paste this under resources or use [YAML Mode](https://www.home-assistant.io/lovelace/yaml-mode/) (not recommended))
@@ -26,17 +26,17 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
 
 1. Move into your `config/www` directory
 
-2. Grab `group-element-bundle.js`
+2. Grab `cover-element-bundle.js`
 
   ```console
-  $ wget https://github.com/yosilevy/group-element/releases/download/v0.1.0/group-element-bundle.js
+  $ wget https://github.com/yosilevy/group-element/releases/download/v0.1.0/cover-element-bundle.js
   ```
 
-3. Add a reference to `group-element-bundle.js` inside your `ui-lovelace.yaml`.
+3. Add a reference to `cover-element-bundle.js` inside your `ui-lovelace.yaml`.
 
   ```yaml
   resources:
-    - url: /local/group-element-bundle.js?v=0.1.0
+    - url: /local/cover-element-bundle.js?v=0.1.0
       type: module
   ```
 
@@ -53,7 +53,7 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
   ```
 
 ## Updating
-1. Find your `group-element-bundle.js` file in `config/www` or wherever you ended up storing it.
+1. Find your `cover-element-bundle.js` file in `config/www` or wherever you ended up storing it.
 
 2. Replace the local file with the latest one attached in the [latest release](https://github.com/yosilev/group-element/releases/latest).
 
@@ -61,7 +61,7 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
 
   ```yaml
   resources:
-    - url: /local/group-element-bundle.js?v=0.1.0
+    - url: /local/cover-element-bundle.js?v=0.1.0
       type: module
   ```
 
@@ -272,7 +272,7 @@ This is however only possible when you have lovelace mode set to yaml in your HA
 ## Getting errors?
 Make sure you have `javascript_version: latest` in your `configuration.yaml` under `frontend:`.
 
-Make sure you have the latest version of `group-element-bundle.js`.
+Make sure you have the latest version of `cover-element-bundle.js`.
 
 If you have issues after updating the card, try clearing your browsers cache or restart Home Assistant.
 
