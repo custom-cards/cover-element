@@ -44,22 +44,20 @@ class HuiCoverElement extends LitElement {
     }
 
     return html`
-      <div class="main">
-        <div class="flex">
-          ${isTiltOnly(stateObj)
-            ? html`
-                <ha-cover-tilt-controls
-                  .hass="${this.hass}"
-                  .stateObj="${stateObj}"
-                ></ha-cover-tilt-controls>
-              `
-            : html`
-                <ha-cover-controls
-                  .hass="${this.hass}"
-                  .stateObj="${stateObj}"
-                ></ha-cover-controls>
-              `}
-        </div>
+      <div class="content">
+        ${isTiltOnly(stateObj)
+          ? html`
+              <ha-cover-tilt-controls
+                .hass="${this.hass}"
+                .stateObj="${stateObj}"
+              ></ha-cover-tilt-controls>
+            `
+          : html`
+              <ha-cover-controls
+                .hass="${this.hass}"
+                .stateObj="${stateObj}"
+              ></ha-cover-controls>
+            `}
         ${this._config.position_label && this._config.position_label.show
           ? html`
               <div class="position">
@@ -72,7 +70,7 @@ class HuiCoverElement extends LitElement {
   }
 
   _computePosition(stateObj) {
-    if (stateObj.attributes.current_position === "undefined") {
+    if (stateObj.attributes.current_position === undefined) {
       return "";
     }
 
@@ -99,14 +97,18 @@ class HuiCoverElement extends LitElement {
 
   static get styles() {
     return css`
-      .main {
+      @media (max-width: 400px) {
+        .content {
+          transform: scale(var(--narrow-scale-factor, 0.8));
+          transform-origin: top;
+        }
       }
-      .flex {
+      .content {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
       }
-
       .position {
         text-align: center;
         margin-top: var(--position-label-margin-top, -5px);
