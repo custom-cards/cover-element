@@ -1,6 +1,6 @@
 # Cover Element
 
-An element that shows cover/blinds control [Home Assistant](https://github.com/home-assistant/home-assistant) [picture-elements](https://www.home-assistant.io/lovelace/picture-elements/) card with dynamic toggle capability.
+An element that shows cover/blinds control in a [Home Assistant](https://github.com/home-assistant/home-assistant) [picture-elements](https://www.home-assistant.io/lovelace/picture-elements/) card.
 
 ![Preview Image](https://github.com/yosilevy/cover-element/blob/master/docs/Cover-main.JPG?raw=true)
 
