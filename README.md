@@ -100,7 +100,7 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
   ```yaml
   resources:
     - url: /local/cover-element-bundle.js?v=0.1.0
-      type: js
+      type: module
   ```
 
 *You may need to empty the browsers cache if you have problems loading the updated card.*
