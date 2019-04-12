@@ -2,7 +2,7 @@
 
 An element that shows cover/blinds control [Home Assistant](https://github.com/home-assistant/home-assistant) [picture-elements](https://www.home-assistant.io/lovelace/picture-elements/) card with dynamic toggle capability.
 
-![Preview Image](https://user-images.githubusercontent.com/457678/47517460-9282d600-d888-11e8-9705-cf9ec3698c3c.png)
+![Preview Image](https://github.com/yosilevy/cover-element/blob/master/docs/Cover-main.JPG?raw=true)
 
 ## Using the card
 
@@ -22,7 +22,7 @@ An element that shows cover/blinds control [Home Assistant](https://github.com/h
 
 ### Example usage
 
-<img src="https://user-images.githubusercontent.com/457678/52081816-771c1b00-259b-11e9-8c1e-cfd93ac3e66d.png" width="500px" alt="Basic card example" />
+<img src="https://github.com/yosilevy/cover-element/blob/master/docs/Cover-main.JPG?raw=true" width="400px" alt="Example" />
 
 ```yaml
 - type: picture-elements
@@ -30,6 +30,11 @@ An element that shows cover/blinds control [Home Assistant](https://github.com/h
   elements:
     - type: 'custom:cover-element'
       entity: cover.livingroom_terrace_shutter
+      position_label:
+        show: true
+        open_text: open
+        closed_text: closed
+        interim_text: open
       style:
         top: 40%
         height: 15%
@@ -38,11 +43,6 @@ An element that shows cover/blinds control [Home Assistant](https://github.com/h
         border-radius: 10px
         border-color: blue
         left: 53%
-      position_label:
-        show: true
-        open_text: open
-        closed_text: closed
-        interim_text: open
 ```
 
 ## Install
