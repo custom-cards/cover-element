@@ -120,5 +120,8 @@ resources:
     type: js
 ```
 
+## Note - Home Assistant version 0.91.X
+There is a bug in HA 0.91.X that will be fixed in 0.92 and causes this control to display wrong in the card editor. Please ignore it as it will look OK in the actual UI.
+
 ## License
 This project is under the Apache 2.0 license.
