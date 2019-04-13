@@ -41,7 +41,6 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
         background-color: 'rgba(255, 255, 255, 0.6)'
         width: 23%
         border-radius: 10px
-        border-color: blue
         left: 53%
 ```
 
