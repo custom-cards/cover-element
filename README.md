@@ -6,7 +6,7 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
 
 ## Using the card
 
-#### Card options
+#### Element options
 | Name | Type | Default | Since | Description |
 |------|------|---------|-------|-------------|
 | type | string | **required** | v0.1 | `custom:cover-element`
