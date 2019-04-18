@@ -66,7 +66,7 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
 2. Grab `cover-element-bundle.js`
 
   ```console
-  $ wget https://github.com/yosilevy/cover-element/releases/download/v0.1.0/cover-element-bundle.js
+  $ wget https://github.com/yosilevy/cover-element/releases/download/0.1.0/cover-element-bundle.js
   ```
 
 3. Add a reference to `cover-element-bundle.js` inside your `ui-lovelace.yaml`.
