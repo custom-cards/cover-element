@@ -2,7 +2,7 @@
 
 An element that shows cover/blinds control in a [Home Assistant](https://github.com/home-assistant/home-assistant) [picture-elements](https://www.home-assistant.io/lovelace/picture-elements/) card.
 
-![Preview Image](https://github.com/custom-cards/cover-element/blob/master/docs/Cover-main.JPG?raw=true)
+<img src="https://github.com/custom-cards/cover-element/blob/master/docs/Cover-main.JPG?raw=true" width="450">
 
 ## Using the card
 
@@ -22,7 +22,7 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
 
 ### Example usage
 
-<img src="https://github.com/custom-cards/cover-element/blob/master/docs/Cover-main.JPG?raw=true" width="400px" alt="Example" />
+<img src="https://github.com/custom-cards/cover-element/blob/master/docs/Cover-main.JPG?raw=true" width="450">
 
 ```yaml
 - type: picture-elements
