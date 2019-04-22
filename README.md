@@ -2,7 +2,7 @@
 
 An element that shows cover/blinds control in a [Home Assistant](https://github.com/home-assistant/home-assistant) [picture-elements](https://www.home-assistant.io/lovelace/picture-elements/) card.
 
-![Preview Image](https://github.com/yosilevy/cover-element/blob/master/docs/Cover-main.JPG?raw=true)
+![Preview Image](https://github.com/custom-cards/cover-element/blob/master/docs/Cover-main.JPG?raw=true)
 
 ## Using the card
 
@@ -22,7 +22,7 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
 
 ### Example usage
 
-<img src="https://github.com/yosilevy/cover-element/blob/master/docs/Cover-main.JPG?raw=true" width="400px" alt="Example" />
+<img src="https://github.com/custom-cards/cover-element/blob/master/docs/Cover-main.JPG?raw=true" width="400px" alt="Example" />
 
 ```yaml
 - type: picture-elements
@@ -48,7 +48,7 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
 
 ### Simple install
 
-1. Download and copy `cover-element-bundle.js` from the [latest release](https://github.com/yosilevy/cover-element/releases/latest) into your `config/www` directory.
+1. Download and copy `cover-element-bundle.js` from the [latest release](https://github.com/custom-cards/cover-element/releases/latest) into your `config/www` directory.
 
 2. Add a reference to `cover-element-bundle.js` in lovelace.
 
@@ -66,7 +66,7 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
 2. Grab `cover-element-bundle.js`
 
   ```console
-  $ wget https://github.com/yosilevy/cover-element/releases/download/0.1.0/cover-element-bundle.js
+  $ wget https://github.com/custom-cards/cover-element/releases/download/0.1.0/cover-element-bundle.js
   ```
 
 3. Add a reference to `cover-element-bundle.js` inside your `ui-lovelace.yaml`.
@@ -86,13 +86,13 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
   ```yaml
   custom_updater:
     card_urls:
-      - https://raw.githubusercontent.com/yosilevy/cover-element/master/tracker.json
+      - https://raw.githubusercontent.com/custom-cards/cover-element/master/tracker.json
   ```
 
 ## Updating
 1. Find your `cover-element-bundle.js` file in `config/www` or wherever you ended up storing it.
 
-2. Replace the local file with the latest one attached in the [latest release](https://github.com/yosilev/cover-element/releases/latest).
+2. Replace the local file with the latest one attached in the [latest release](https://github.com/custom-cards/cover-element/releases/latest).
 
 3. Add the new version number to the end of the cards reference url in your `ui-lovelace.yaml` like below.
 
