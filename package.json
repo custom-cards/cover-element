@@ -18,7 +18,6 @@
   "author": "Yosi Levy <yosilevy@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "lit-element": "^2.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

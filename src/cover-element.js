@@ -1,7 +1,7 @@
-import { html, LitElement, css } from "lit-element";
+import { HassUtils } from "./hass/hass-utils";
 import { isTiltOnly } from "./hass/cover-model";
 
-class HuiCoverElement extends LitElement {
+class HuiCoverElement extends HassUtils.LitElement {
   constructor() {
     super();
     this._config = {};
@@ -32,39 +32,43 @@ class HuiCoverElement extends LitElement {
 
   render() {
     if (!this._config || !this.hass) {
-      return html``;
+      return HassUtils.LitHtml``;
     }
 
     const stateObj = this.hass.states[this._config.entity];
 
     if (!stateObj) {
-      return html`
+      return HassUtils.LitHtml`
         <hui-warning>Entity not found</hui-warning>
       `;
     }
 
-    return html`
+    return HassUtils.LitHtml`
       <div class="content">
-        ${isTiltOnly(stateObj)
-          ? html`
+        ${
+          isTiltOnly(stateObj)
+            ? HassUtils.LitHtml`
               <ha-cover-tilt-controls
                 .hass="${this.hass}"
                 .stateObj="${stateObj}"
               ></ha-cover-tilt-controls>
             `
-          : html`
+            : HassUtils.LitHtml`
               <ha-cover-controls
                 .hass="${this.hass}"
                 .stateObj="${stateObj}"
               ></ha-cover-controls>
-            `}
-        ${this._config.position_label && this._config.position_label.show
-          ? html`
+            `
+        }
+        ${
+          this._config.position_label && this._config.position_label.show
+            ? HassUtils.LitHtml`
               <div class="position">
                 ${this._computePosition(stateObj)}
               </div>
             `
-          : html``}
+            : HassUtils.LitHtml``
+        }
       </div>
     `;
   }
@@ -96,7 +100,7 @@ class HuiCoverElement extends LitElement {
   }
 
   static get styles() {
-    return css`
+    return HassUtils.LitCSS`
       @media (max-width: 400px) {
         .content {
           transform: scale(var(--narrow-scale-factor, 0.8));
