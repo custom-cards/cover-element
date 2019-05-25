@@ -46,6 +46,15 @@ class HuiCoverElement extends HassUtils.LitElement {
     return HassUtils.LitHtml`
       <div class="content">
         ${
+          this._config.label
+            ? HassUtils.LitHtml`
+              <div class="label">
+                ${this._config.label}
+              </div>
+            `
+            : HassUtils.LitHtml``
+        }
+        ${
           isTiltOnly(stateObj)
             ? HassUtils.LitHtml`
               <ha-cover-tilt-controls
@@ -112,6 +121,13 @@ class HuiCoverElement extends HassUtils.LitElement {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+      }
+      .label {
+        text-align: center;
+        margin-top: var(--label-margin-top, 10px);
+        color: var(--label-color);
+        font-size: var(--label-font-size);
+        font-weight: var(--label-font-weight);
       }
       .position {
         text-align: center;

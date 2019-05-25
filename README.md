@@ -11,6 +11,8 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
 |------|------|---------|-------|-------------|
 | type | string | **required** | v0.1 | `custom:cover-element`
 | entity | string | **required** | v0.1 | Cover entity to control.
+| label | string |  | v0.2 | Heading label
+
 
 #### Position_label object
 | Name | Type | Default | Since | Description |
