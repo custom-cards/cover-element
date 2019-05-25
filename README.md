@@ -11,7 +11,7 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
 |------|------|---------|-------|-------------|
 | type | string | **required** | v0.1 | `custom:cover-element`
 | entity | string | **required** | v0.1 | Cover entity to control.
-| label | string |  | v0.2 | Heading label
+| label | string |  | v0.3 | Heading label
 
 
 #### Position_label object
@@ -56,7 +56,7 @@ An element that shows cover/blinds control in a [Home Assistant](https://github.
 
   ```yaml
   resources:
-    - url: /local/cover-element-bundle.js?v=0.1.0
+    - url: /local/cover-element-bundle.js?v=0.3.0
       type: module
   ```
 To do this, go to Configure UI -> Raw Config Editor and paste this under resources or use [YAML Mode](https://www.home-assistant.io/lovelace/yaml-mode/) (not recommended))
@@ -68,14 +68,14 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
 2. Grab `cover-element-bundle.js`
 
   ```console
-  $ wget https://github.com/custom-cards/cover-element/releases/download/0.1.0/cover-element-bundle.js
+  $ wget https://github.com/custom-cards/cover-element/releases/download/0.3.0/cover-element-bundle.js
   ```
 
 3. Add a reference to `cover-element-bundle.js` inside your `ui-lovelace.yaml`.
 
   ```yaml
   resources:
-    - url: /local/cover-element-bundle.js?v=0.1.0
+    - url: /local/cover-element-bundle.js?v=0.3.0
       type: module
   ```
 
@@ -100,7 +100,7 @@ To do this, go to Configure UI -> Raw Config Editor and paste this under resourc
 
   ```yaml
   resources:
-    - url: /local/cover-element-bundle.js?v=0.1.0
+    - url: /local/cover-element-bundle.js?v=0.3.0
       type: module
   ```
 
