@@ -1,7 +1,7 @@
 {
   "name": "cover-element",
   "version": "v0.1.0",
-  "description": "A toggleable element that groups other elements within Home Assistant's picture-elements cards.",
+  "description": "An element that allows control of covers/blinds within picture-elements.",
   "keywords": [
     "home-assistant",
     "homeassistant",
